@@ -1,57 +1,187 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
     <title>Contáctenos - VitaLine: Niños más seguros</title>
-    <link rel="stylesheet" href="css/generales.css">
-    <link rel="stylesheet" href="css/contactenos.css">
 </head>
 <body>
-    <header>
-        <h1>VitaLine: Niños más seguros</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="multimedia.html">Multimedia</a></li>
-                <li><a href="quienes-somos.html">Quiénes somos</a></li>
-                <li><a href="contactenos.html">Contáctenos</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a class="c-link" href="index.html">
+                    <div class="c-logo">
+                        <img src="img/logo.png" alt="Logo" class="c-logo__img" />
+                        <span class="c-logo__text c-logo__text--white">VitaLine</span>
+                    </div>
+                </a>
+                <nav class="c-nav">
+                    <input id="dropdown" class="c-nav__toggle" type="checkbox" />
+                    <div class="c-nav__content">
+                        <ul class="c-list c-list--flex">
+                            <li class="c-list__item">
+                                <a href="index.html" class="c-link c-link--list">Inicio</a>
+                            </li>
+                            <li class="c-list__item">
+                                <a href="multimedia.html" class="c-link c-link--list">Multimedia</a>
+                            </li>
+                            <li class="c-list__item">
+                                <a href="quienes-somos.html" class="c-link c-link--list">Quiénes somos</a>
+                            </li>
+                            <li class="c-list__item">
+                                <a href="contactenos.html" class="c-link c-link--list">Contáctenos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
     </header>
 
     <main>
-        <section id="marco-teorico">
-            <h2>Marco Teórico</h2>
-            <button onclick="toggleContent('marco-teorico-content')">Ver Marco Teórico</button>
-            <div id="marco-teorico-content" class="hidden">
-                <!-- Contenido del marco teórico -->
+        <section class="section">
+            <div class="container">
+                <div class="section__title-wrapper">
+                    <h1 class="heading heading--1">Contáctenos</h1>
+                    <h4 class="heading heading--4">Estamos aquí para ayudarte y responder tus preguntas</h4>
+                </div>
             </div>
         </section>
 
-        <section id="redes-sociales">
-            <h2>Redes Sociales</h2>
-            <!-- Enlaces a redes sociales -->
+        <section class="section">
+            <div class="container">
+                <div class="section__title-wrapper">
+                    <h2 class="heading heading--2">Marco Teórico</h2>
+                </div>
+                <div class="box box--flex">
+                    <article class="c-card">
+                        <div class="c-card__content">
+                            <p class="c-paragraph c-card__text">
+                                Nuestro enfoque de seguridad infantil se basa en investigaciones actualizadas y mejores prácticas en el campo de la protección y el desarrollo infantil. Trabajamos en colaboración con expertos en psicología infantil, educación y seguridad pública para desarrollar nuestros programas y materiales.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <section id="hojas-vida">
-            <h2>Hojas de Vida</h2>
-            <!-- Contenido de las hojas de vida -->
+        <section class="section">
+            <div class="container">
+                <div class="section__title-wrapper">
+                    <h2 class="heading heading--2">Redes Sociales</h2>
+                </div>
+                <div class="box box--flex">
+                    <article class="c-card">
+                        <div class="c-card__content">
+                            <h3 class="c-card__title heading heading--3">Síguenos en nuestras redes</h3>
+                            <ul class="c-list">
+                                <li class="c-list__item">
+                                    <a href="#" class="c-link">Facebook</a>
+                                </li>
+                                <li class="c-list__item">
+                                    <a href="#" class="c-link">Twitter</a>
+                                </li>
+                                <li class="c-list__item">
+                                    <a href="#" class="c-link">Instagram</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <section id="portadas-revista">
-            <h2>Portadas de Revista</h2>
-            <!-- Imágenes de las portadas de revista -->
+        <section class="section">
+            <div class="container">
+                <div class="section__title-wrapper">
+                    <h2 class="heading heading--2">Hojas de Vida</h2>
+                </div>
+                <div class="box box--flex">
+                    <article class="c-card">
+                        <div class="c-card__content">
+                            <h3 class="c-card__title heading heading--3">Nuestro Equipo</h3>
+                            <p class="c-paragraph c-card__text">
+                                Conoce a los profesionales detrás de VitaLine. Nuestro equipo está compuesto por expertos en seguridad infantil, educadores y profesionales de la salud comprometidos con el bienestar de los niños.
+                            </p>
+                            <a href="#" class="c-button c-button--secondary">Ver Hojas de Vida</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <section id="instalaciones">
-            <h2>Nuestras Instalaciones</h2>
-            <!-- Imágenes o información sobre las instalaciones -->
+        <section class="section">
+            <div class="container">
+                <div class="section__title-wrapper">
+                    <h2 class="heading heading--2">Portadas de Revista</h2>
+                </div>
+                <div class="box box--flex">
+                    <article class="c-card">
+                        <div class="c-card__img-holder">
+                            <img class="c-card__img" src="img/revista-portada-1.jpg" alt="Portada de Revista 1" />
+                        </div>
+                    </article>
+                    <article class="c-card">
+                        <div class="c-card__img-holder">
+                            <img class="c-card__img" src="img/revista-portada-2.jpg" alt="Portada de Revista 2" />
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section__title-wrapper">
+                    <h2 class="heading heading--2">Nuestras Instalaciones</h2>
+                </div>
+                <div class="box box--flex">
+                    <article class="c-feature">
+                        <div class="c-feature__img-holder">
+                            <img class="c-feature__img" src="img/instalaciones.jpg" alt="Nuestras Instalaciones" />
+                        </div>
+                        <div class="c-feature__content">
+                            <h3 class="c-feature__title heading heading--3">Centro de Formación VitaLine</h3>
+                            <p class="c-paragraph c-feature__text">
+                                Nuestras modernas instalaciones están equipadas con la última tecnología para proporcionar la mejor formación en seguridad infantil. Contamos con aulas interactivas, áreas de simulación y espacios de colaboración para garantizar una experiencia de aprendizaje óptima.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section__title-wrapper">
+                    <h2 class="heading heading--2">Formulario de Contacto</h2>
+                </div>
+                <div class="box box--flex">
+                    <form action="#" method="post" class="c-form">
+                        <div class="c-form__group">
+                            <label for="nombre" class="c-form__label">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" class="c-form__input" required>
+                        </div>
+                        <div class="c-form__group">
+                            <label for="email" class="c-form__label">Email</label>
+                            <input type="email" id="email" name="email" class="c-form__input" required>
+                        </div>
+                        <div class="c-form__group">
+                            <label for="mensaje" class="c-form__label">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" class="c-form__textarea" required></textarea>
+                        </div>
+                        <button type="submit" class="c-button c-button--primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2023 VitaLine. Todos los derechos reservados.</p>
-    </footer>
-</body>
-</html>
+    <footer class="footer">
+        <div class="container">
+            <div class="c-footer">
+                <div class="c-footer__box">
+                    <a class="c-link" href="index.html">
+                        

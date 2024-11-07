@@ -1,90 +1,236 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiénes somos - VitaLine: Niños más seguros</title>
-    <link rel="stylesheet" href="css/generales.css">
-    <link rel="stylesheet" href="css/quienes-somos.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+    <title>Quiénes Somos - VitaLine: Niños más seguros</title>
 </head>
 <body>
-    <header>
-        <h1>VitaLine: Niños más seguros</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="multimedia.html">Multimedia</a></li>
-                <li><a href="quienes-somos.html">Quiénes somos</a></li>
-                <li><a href="contactenos.html">Contáctenos</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a class="c-link" href="index.html">
+                    <div class="c-logo">
+                        <img src="img/logo.png" alt="Logo" class="c-logo__img" />
+                        <span class="c-logo__text c-logo__text--white">VitaLine</span>
+                    </div>
+                </a>
+                <nav class="c-nav">
+                    <input id="dropdown" class="c-nav__toggle" type="checkbox" />
+                    <div class="c-nav__content">
+                        <ul class="c-list c-list--flex">
+                            <li class="c-list__item">
+                                <a href="index.html" class="c-link c-link--list">Inicio</a>
+                            </li>
+                            <li class="c-list__item">
+                                <a href="multimedia.html" class="c-link c-link--list">Multimedia</a>
+                            </li>
+                            <li class="c-list__item">
+                                <a href="quienes-somos.html" class="c-link c-link--list">Quiénes somos</a>
+                            </li>
+                            <li class="c-list__item">
+                                <a href="contactenos.html" class="c-link c-link--list">Contáctenos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
     </header>
 
     <main>
-        <section id="mision">
-            <h2>Misión</h2>
-            <button onclick="toggleContent('mision-content')">Ver Misión</button>
-            <div id="mision-content" class="hidden">
-                <!-- Contenido de la misión -->
+        <section class="section">
+            <div class="container">
+                <div class="section__title-wrapper">
+                    <h1 class="heading heading--1">Quiénes Somos</h1>
+                    <h4 class="heading heading--4">Conoce más sobre VitaLine y nuestro compromiso con la seguridad infantil</h4>
+                </div>
             </div>
         </section>
 
-        <section id="vision">
-            <h2>Visión</h2>
-            <button onclick="toggleContent('vision-content')">Ver Visión</button>
-            <div id="vision-content" class="hidden">
-                <!-- Contenido de la visión -->
+        <section class="section">
+            <div class="container">
+                <div class="box box--grid">
+                    <article class="c-feature">
+                        <div class="c-feature__content">
+                            <h3 class="c-feature__title heading heading--3">Misión</h3>
+                            <p class="c-paragraph c-feature__text">
+                                Nuestra misión es proporcionar herramientas y conocimientos para garantizar la seguridad de los niños en todos los aspectos de su vida diaria.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="c-feature">
+                        <div class="c-feature__content">
+                            <h3 class="c-feature__title heading heading--3">Visión</h3>
+                            <p class="c-paragraph c-feature__text">
+                                Aspiramos a crear un mundo donde todos los niños puedan crecer y desarrollarse en un entorno seguro y protegido.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="c-feature">
+                        <div class="c-feature__content">
+                            <h3 class="c-feature__title heading heading--3">Slogan</h3>
+                            <p class="c-paragraph c-feature__text">
+                                "Protegiendo sonrisas, construyendo futuros"
+                            </p>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
 
-        <section id="slogan">
-            <h2>Slogan</h2>
-            <!-- Contenido del slogan -->
-        </section>
-
-        <section id="marco-georeferencial">
-            <h2>Marco Georeferencial</h2>
-            <button onclick="toggleContent('marco-geo-content')">Ver Marco Georeferencial</button>
-            <div id="marco-geo-content" class="hidden">
-                <!-- Contenido del marco georeferencial -->
+        <section class="section">
+            <div class="container">
+                <div class="section__title-wrapper">
+                    <h2 class="heading heading--2">Marco Georeferencial</h2>
+                </div>
+                <div class="box box--flex">
+                    <article class="c-card">
+                        <div class="c-card__content">
+                            <p class="c-paragraph c-card__text">
+                                VitaLine opera en [Ubicación], centrándose en las necesidades específicas de seguridad infantil en nuestra comunidad local y expandiendo nuestro alcance a nivel nacional.
+                            </p>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
 
-        <section id="objetivos">
-            <h2>Objetivos Generales y Específicos</h2>
-            <button onclick="toggleContent('objetivos-content')">Ver Objetivos</button>
-            <div id="objetivos-content" class="hidden">
-                <!-- Contenido de los objetivos -->
+        <section class="section">
+            <div class="container">
+                <div class="section__title-wrapper">
+                    <h2 class="heading heading--2">Objetivos</h2>
+                </div>
+                <div class="box box--flex">
+                    <article class="c-card">
+                        <div class="c-card__content">
+                            <h3 class="c-card__title heading heading--3">Objetivo General</h3>
+                            <p class="c-paragraph c-card__text">
+                                Mejorar la seguridad y el bienestar de los niños a través de la educación y la concientización.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="c-card">
+                        <div class="c-card__content">
+                            <h3 class="c-card__title heading heading--3">Objetivos Específicos</h3>
+                            <ul class="c-list">
+                                <li class="c-list__item">Desarrollar programas educativos sobre seguridad infantil</li>
+                                <li class="c-list__item">Crear herramientas interactivas para el aprendizaje</li>
+                                <li class="c-list__item">Colaborar con escuelas y comunidades locales</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
 
-        <section id="arboles">
-            <h2>Árboles de Problema y Solución</h2>
-            <button onclick="toggleContent('arboles-content')">Ver Árboles</button>
-            <div id="arboles-content" class="hidden">
-                <!-- Contenido de los árboles de problema y solución -->
+        <section class="section">
+            <div class="container">
+                <div class="section__title-wrapper">
+                    <h2 class="heading heading--2">Árboles de Problema y Solución</h2>
+                </div>
+                <div class="box box--flex">
+                    <article class="c-card">
+                        <div class="c-card__content">
+                            <h3 class="c-card__title heading heading--3">Problema 1 y Solución 1</h3>
+                            <p class="c-paragraph c-card__text">
+                                Problema: Falta de conocimiento sobre primeros auxilios en niños.
+                                Solución: Implementar talleres y cursos de primeros auxilios para padres y cuidadores.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="c-card">
+                        <div class="c-card__content">
+                            <h3 class="c-card__title heading heading--3">Problema 2 y Solución 2</h3>
+                            <p class="c-paragraph c-card__text">
+                                Problema: Riesgos de seguridad en el hogar para niños pequeños.
+                                Solución: Desarrollar una guía completa de seguridad en el hogar y ofrecer asesorías personalizadas.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="c-card">
+                        <div class="c-card__content">
+                            <h3 class="c-card__title heading heading--3">Problema 3 y Solución 3</h3>
+                            <p class="c-paragraph c-card__text">
+                                Problema: Bullying y acoso escolar.
+                                Solución: Crear programas de prevención del bullying en escuelas y promover la empatía y el respeto.
+                            </p>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
 
-        <section id="marco-legal">
-            <h2>Marco Legal</h2>
-            <button onclick="toggleContent('marco-legal-content')">Ver Marco Legal</button>
-            <div id="marco-legal-content" class="hidden">
-                <!-- Contenido del marco legal -->
+        <section class="section">
+            <div class="container">
+                <div class="section__title-wrapper">
+                    <h2 class="heading heading--2">Marco Legal</h2>
+                </div>
+                <div class="box box--flex">
+                    <article class="c-card">
+                        <div class="c-card__content">
+                            <p class="c-paragraph c-card__text">
+                                VitaLine opera bajo las leyes y regulaciones de protección infantil vigentes en [País/Región], incluyendo [mencionar leyes específicas relevantes para la seguridad infantil].
+                            </p>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
 
-        <section id="marcos-teoricos">
-            <h2>Marcos Teóricos</h2>
-            <button onclick="toggleContent('marcos-teoricos-content')">Ver Marcos Teóricos</button>
-            <div id="marcos-teoricos-content" class="hidden">
-                <!-- Contenido de los marcos teóricos -->
+        <section class="section">
+            <div class="container">
+                <div class="section__title-wrapper">
+                    <h2 class="heading heading--2">Marcos Teóricos</h2>
+                </div>
+                <div class="box box--flex">
+                    <article class="c-card">
+                        <div class="c-card__content">
+                            <p class="c-paragraph c-card__text">
+                                Nuestro trabajo se basa en teorías de desarrollo infantil, psicología educativa y estudios de seguridad pública. Utilizamos enfoques basados en evidencia para desarrollar nuestros programas y materiales educativos.
+                            </p>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2023 VitaLine. Todos los derechos reservados.</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="c-footer">
+                <div class="c-footer__box">
+                    <a class="c-link" href="index.html">
+                        <div class="c-logo">
+                            <img src="img/logo.png" alt="Logo" class="c-logo__img" />
+                            <span class="c-logo__text c-logo__text--white">VitaLine</span>
+                        </div>
+                    </a>
+                    <p class="c-paragraph c-footer__text">
+                        © 2023 VitaLine, todos los derechos reservados
+                    </p>
+                </div>
+                <div class="c-footer__box">
+                    <div class="c-footer__icons">
+                        <a href="#"><img class="c-footer__icon" src="img/instagram.svg" alt="Instagram" /></a>
+                        <a href="#"><img class="c-footer__icon" src="img/twitter.svg" alt="Twitter" /></a>
+                        <a href="#"><img class="c-footer__icon" src="img/facebook.svg" alt="Facebook" /></a>
+                    </div>
+                    <ul class="c-list c-list--flex c-list--align-right">
+                        <li class="c-list__item c-list__item--small">
+                            <a href="contactenos.html" class="c-link c-link--list c-link--list-right">Contacto</a>
+                        </li>
+                        <li class="c-list__item c-list__item--small">
+                            <a href="quienes-somos.html" class="c-link c-link--list c-link--list-right">Sobre nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

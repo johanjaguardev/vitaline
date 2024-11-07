@@ -1,59 +1,174 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
     <title>Multimedia - VitaLine: Niños más seguros</title>
-    <link rel="stylesheet" href="css/generales.css">
-    <link rel="stylesheet" href="css/multimedia.css">
 </head>
 <body>
-    <header>
-        <h1>VitaLine: Niños más seguros</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="multimedia.html">Multimedia</a></li>
-                <li><a href="quienes-somos.html">Quiénes somos</a></li>
-                <li><a href="contactenos.html">Contáctenos</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a class="c-link" href="index.html">
+                    <div class="c-logo">
+                        <img src="img/logo.png" alt="Logo" class="c-logo__img" />
+                        <span class="c-logo__text c-logo__text--white">VitaLine</span>
+                    </div>
+                </a>
+                <nav class="c-nav">
+                    <input id="dropdown" class="c-nav__toggle" type="checkbox" />
+                    <div class="c-nav__content">
+                        <ul class="c-list c-list--flex">
+                            <li class="c-list__item">
+                                <a href="index.html" class="c-link c-link--list">Inicio</a>
+                            </li>
+                            <li class="c-list__item">
+                                <a href="multimedia.html" class="c-link c-link--list">Multimedia</a>
+                            </li>
+                            <li class="c-list__item">
+                                <a href="quienes-somos.html" class="c-link c-link--list">Quiénes somos</a>
+                            </li>
+                            <li class="c-list__item">
+                                <a href="contactenos.html" class="c-link c-link--list">Contáctenos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
     </header>
 
     <main>
-        <section id="kahoot">
-            <h2>KAHOOT</h2>
-            <iframe src="URL_DEL_KAHOOT" frameborder="0" allowfullscreen></iframe>
-        </section>
-
-        <section id="guias">
-            <h2>Guías</h2>
-            <div>
-                <h3>Guía 1</h3>
-                <a href="ruta/a/guia1.pdf" download>Descargar Guía 1 (PDF)</a>
-            </div>
-            <div>
-                <h3>Guía 2</h3>
-                <a href="ruta/a/guia2.pdf" download>Descargar Guía 2 (PDF)</a>
+        <section class="section">
+            <div class="container">
+                <div class="section__title-wrapper">
+                    <h1 class="heading heading--1">Multimedia</h1>
+                    <h4 class="heading heading--4">Explora nuestros recursos multimedia sobre seguridad infantil</h4>
+                </div>
             </div>
         </section>
 
-        <section id="juego">
-            <h2>GMIT Link Juego</h2>
-            <iframe src="URL_DEL_JUEGO" frameborder="0" allowfullscreen></iframe>
+        <section class="section">
+            <div class="container">
+                <div class="section__title-wrapper">
+                    <h2 class="heading heading--2">KAHOOT</h2>
+                    <h4 class="heading heading--4">Aprende jugando con nuestro Kahoot interactivo</h4>
+                </div>
+                <div class="box box--flex">
+                    <div class="c-feature__img-holder" style="width: 100%; height: 500px;">
+                        <iframe src="URL_DEL_KAHOOT" frameborder="0" allowfullscreen style="width: 100%; height: 100%;"></iframe>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="formulario">
-            <h2>Formulario de Conocimiento Básico de Primeros Auxilios</h2>
-            <form action="#" method="post">
-                <!-- Aquí irían los campos del formulario -->
-                <input type="submit" value="Enviar">
-            </form>
+        <section class="section">
+            <div class="container">
+                <div class="section__title-wrapper">
+                    <h2 class="heading heading--2">Guías de Contenido</h2>
+                    <h4 class="heading heading--4">Descarga nuestras guías informativas</h4>
+                </div>
+                <div class="box box--flex">
+                    <article class="c-card">
+                        <div class="c-card__content">
+                            <h3 class="c-card__title heading heading--3">Guía 1</h3>
+                            <p class="c-paragraph c-card__text">
+                                Descarga nuestra primera guía sobre seguridad infantil.
+                            </p>
+                            <a href="ruta/a/guia1.pdf" download class="c-button c-button--secondary">Descargar PDF</a>
+                        </div>
+                    </article>
+                    <article class="c-card">
+                        <div class="c-card__content">
+                            <h3 class="c-card__title heading heading--3">Guía 2</h3>
+                            <p class="c-paragraph c-card__text">
+                                Obtén nuestra segunda guía con más información sobre seguridad infantil.
+                            </p>
+                            <a href="ruta/a/guia2.pdf" download class="c-button c-button--secondary">Descargar PDF</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section__title-wrapper">
+                    <h2 class="heading heading--2">Juego GMIT</h2>
+                    <h4 class="heading heading--4">Juega y aprende con nuestro juego interactivo</h4>
+                </div>
+                <div class="box box--flex">
+                    <div class="c-feature__img-holder" style="width: 100%; height: 500px;">
+                        <iframe src="URL_DEL_JUEGO" frameborder="0" allowfullscreen style="width: 100%; height: 100%;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section__title-wrapper">
+                    <h2 class="heading heading--2">Formulario de Conocimiento Básico de Primeros Auxilios</h2>
+                    <h4 class="heading heading--4">Evalúa tus conocimientos sobre primeros auxilios</h4>
+                </div>
+                <div class="box box--flex">
+                    <form action="#" method="post" class="c-form">
+                        <div class="c-form__group">
+                            <label for="nombre" class="c-form__label">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" class="c-form__input" required>
+                        </div>
+                        <div class="c-form__group">
+                            <label for="email" class="c-form__label">Email</label>
+                            <input type="email" id="email" name="email" class="c-form__input" required>
+                        </div>
+                        <div class="c-form__group">
+                            <label for="pregunta1" class="c-form__label">¿Cuál es el número de emergencia en tu país?</label>
+                            <input type="text" id="pregunta1" name="pregunta1" class="c-form__input" required>
+                        </div>
+                        <div class="c-form__group">
+                            <label for="pregunta2" class="c-form__label">¿Qué harías en caso de una quemadura leve?</label>
+                            <textarea id="pregunta2" name="pregunta2" class="c-form__textarea" required></textarea>
+                        </div>
+                        <button type="submit" class="c-button c-button--primary">Enviar respuestas</button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2023 VitaLine. Todos los derechos reservados.</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="c-footer">
+                <div class="c-footer__box">
+                    <a class="c-link" href="index.html">
+                        <div class="c-logo">
+                            <img src="img/logo.png" alt="Logo" class="c-logo__img" />
+                            <span class="c-logo__text c-logo__text--white">VitaLine</span>
+                        </div>
+                    </a>
+                    <p class="c-paragraph c-footer__text">
+                        © 2023 VitaLine, todos los derechos reservados
+                    </p>
+                </div>
+                <div class="c-footer__box">
+                    <div class="c-footer__icons">
+                        <a href="#"><img class="c-footer__icon" src="img/instagram.svg" alt="Instagram" /></a>
+                        <a href="#"><img class="c-footer__icon" src="img/twitter.svg" alt="Twitter" /></a>
+                        <a href="#"><img class="c-footer__icon" src="img/facebook.svg" alt="Facebook" /></a>
+                    </div>
+                    <ul class="c-list c-list--flex c-list--align-right">
+                        <li class="c-list__item c-list__item--small">
+                            <a href="contactenos.html" class="c-link c-link--list c-link--list-right">Contacto</a>
+                        </li>
+                        <li class="c-list__item c-list__item--small">
+                            <a href="quienes-somos.html" class="c-link c-link--list c-link--list-right">Sobre nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
