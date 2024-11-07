@@ -30,6 +30,10 @@ body {
     max-width: 1128px;
   }
 }
+
+img {
+  max-width: 100%;
+}
 .header {
   position: absolute;
   z-index: 1;
