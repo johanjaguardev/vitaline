@@ -824,3 +824,7 @@ img {
   margin-right: 0;
   margin-left: 1.5rem;
 }
+
+video.c-video {
+  max-height: 1000px;
+}
